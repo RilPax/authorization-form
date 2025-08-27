@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+*, *::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 15px;
+}

@@ -1,11 +1,17 @@
-import './App.css'
+import { Route, Routes } from "react-router-dom"
 
 function App() {
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-900">
-      <h1 className="text-4xl font-bold text-white">Tailwind 4 🎉 работает!</h1>
-    </div>
+    <Routes>
+      <Route element={} >
+        <Route path="/profile" element={} />
+      </Route>
+      <Route element={} >
+        <Route path="/login" element={} />
+        <Route path="register" element={} />
+      </Route>      
+    </Routes>
   )
 }
 

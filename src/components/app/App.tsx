@@ -1,18 +1,18 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
+import { ProtectedRoute } from "../";
 
 function App() {
-
   return (
     <Routes>
-      <Route element={} >
+      <Route element={<ProtectedRoute type="auth" />}>
         <Route path="/profile" element={} />
       </Route>
-      <Route element={} >
+      <Route element={<ProtectedRoute type="public" />}>
         <Route path="/login" element={} />
         <Route path="register" element={} />
-      </Route>      
+      </Route>
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
